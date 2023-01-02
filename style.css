@@ -1,0 +1,116 @@
+/*
+    CSS Reset
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;;
+}
+
+/*
+    Body
+*/
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+    Navbar Header
+*/
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-xmark {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.fa-xmark:hover {
+    font-size: 1.6rem;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+/*
+    Navbar and Content
+*/
+
+.navbar {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+}
+
+.is-shown {
+    transform: translate(0%);
+}
+
+.navbar ul {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.navbar li {
+    display: block;
+    width: 99%;
+    font-size: 1.3rem;
+    line-height: 40px;
+    padding-left: 10px;
+    transition: all 0.3s linear;
+}
+
+.navbar li:hover {
+    background-color: white;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+    Menu / Bars Button
+*/
+
+.fa-bars {
+    position: fixed;
+    right: 0px;
+    margin: 20px 20px;
+    font-size: 1.5rem;
+}
+
+.fa-bars:hover {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/*
+    @media Smartphone
+*/
+
+@media (max-width: 600px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .fa-xmark {
+        display: none;
+    }
+}
